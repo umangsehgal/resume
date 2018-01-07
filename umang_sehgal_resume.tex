@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex
+% Author : Umang Sehgal
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item[]\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://umangsehgal.com/}{\Large Umang Sehgal}} & Email : \href{mailto:umang93@uw.edu}{umang93@uw.edu}\\
+  \href{http://umangsehgal.com/}{http://www.umangsehgal.com} & Mobile : (206)972-8543 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Washington}{Seattle, WA}
+      {Master of Science in Information Management;  GPA: 3.80}{Sep. 2017 -- Jun. 2019}
+    \resumeSubheading
+      {LNM Institute of Information Technology}{Jaipur, India}
+      {Bachelor of Technology in Computer Science and Engineering}{Jul. 2012 -- Jun. 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Evive Health}{Bangalore, India}
+      {Software Engineer}{June 2016 - June 2017}
+      \resumeItemListStart
+        \resumeItem{Weight Watcher}
+          {Built this service for tracking weight activities, notifying users with emails and SMSes using third-party APIs, calculate the incentives and perform periodic monitoring and statistical analysis.}
+        \resumeItem{IVR 2.0}
+          {Revamped the exisiting voice based interaction with the Nexmo Voice API for obtaining Health Information and wrapped the interaction with Cassandra and Elastic Search. [Received Appreciation for well-written and bug free code]}
+        \resumeItem{Care to Go}
+          {Implemented the service for 'Second Opinion' recommendation system for Evive's clients, currently used throughout the care suggestion process}
+        \resumeItem{Incremental ETL}
+          {Built an asynchronous ETL framework to perform incremental data load from various data vendors. This reduced loading times from 4 hours for full to under 28 minutes for incremental load.}
+        \resumeItem{Survey Response Aggregator}
+          {Created a state machine framework which was used to drive a survey. The state machine persisted the user’s states to enable resuming the survey later.}
+        \resumeItem{Multiple Small Enterprise Applications}
+          {Created several enterprise web applications, working with Java (8), Cassandra,
+Redis, Spring Boot, ElasticSearch, Git etc following agile processes including scrum and test-driven development}      	\resumeItemListEnd
+
+    \resumeSubheading
+      {Korea Advanced Institute of Science and Technology}{Daejeon, South Korea}
+      {Research Intern}{May 2015 - Jul 2015}
+      \resumeItemListStart
+        \resumeItem{OncoSearch}
+          {Wrote and tested map reduce jobs to distribute the Cancer Gene Search Engine improving performance by 12 percent.}
+        \resumeItem{Korean Sign Langugage Translator}
+          {Wrote a pipeline to construct and collate corpus for Korean Sign Language Translation}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Washington}{Seattle, WA}
+      {Research and Teaching Assistant}{Oct 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Student Researcher - Code and Cognition Lab}
+          {Working with Prof. Andrew J. Ko and PhD. Student Dastyni Loksa on formulating problem-solving behaviors through qualitative coding of self-regulation and journaled projects}
+        \resumeItem{Teaching Assistant - Intro to Data Science (INFO 370)}
+          {Create Readings, Evaluate and Grade Code Submissions, Redesign Curriculum. Apart from this, we are working as a team to define the Data Science process in a set of 10 week modules with topics like decision theory, data cleaning, modelling, visualization and scaling.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Database Principles}
+      {The course involves a project on data summarization, sampling, approximate query processing [In Progress]}
+    \resumeSubItem{SimPark}
+      {Designed a mobile application that helps users find parking through crowdsourcing}
+    \resumeSubItem{Coping Mechanisms Recommender}
+      {Analysis and Recommendation of coping mechanisms in dementia caregiving}
+    \resumeSubItem{DroidMic}
+      {Converts your android phone into microphone for use at conferences!}
+  \resumeSubHeadingListEnd
+
+
+%--------COURSEWORK------------
+\section{Graduate Coursework}
+  \resumeSubHeadingListStart
+    \item[]{
+      \textbf{School of Computer Science}{: Database Principles, Human Computer Interaction}\\
+      \textbf{Information School}{: Analytic Methods, Ethics in Data Science}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item[]{
+      \textbf{Languages}{: Java, R, Python, SQL}
+      \hfill
+      \textbf{Technologies}{: Cassandra, Redis, AWS, JUnit, Maven, Git}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
